@@ -7,7 +7,7 @@ SchemeType schemesIluustration(
   BuildContext context,
 ) {
   final maxWidth = MediaQuery.of(context).size.width;
-  return const SchemeType(
+  return SchemeType(
     // elevenByEleven: [
     //   SchemeModel(
     //     name: null,
@@ -4135,255 +4135,400 @@ SchemeType schemesIluustration(
     //   ),
     // ],
     eightByEight: [
-      SchemeModel(
-        assetPath: 'assets/svg/scheme_8x8/2-3-2.svg',
-        fieldName: '2-3-2',
-        positions: {
-          'LW': PlayerPlace(
-            name: LocalizationModel(
-              en: 'LW',
-              ru: 'ЛФА',
-              ky: 'ЛФА',
-            ),
-          ),
-          'RW': PlayerPlace(
-            name: LocalizationModel(
-              en: 'RW',
-              ru: 'ПФА',
-              ky: 'ПФА',
-            ),
-          ),
-          'CM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CM',
-              ru: 'ЦП',
-              ky: 'ЦП',
-            ),
-          ),
-          'CM_2': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CM',
-              ru: 'ЦП',
-              ky: 'ЦП',
-            ),
-          ),
-          'CM_3': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CM',
-              ru: 'ЦП',
-              ky: 'ЦП',
-            ),
-          ),
-          'CDM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CDM',
-              ru: 'ЦOП',
-              ky: 'ЦOП',
-            ),
-          ),
-          'CDM_2': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CDM',
-              ru: 'ЦOП',
-              ky: 'ЦOП',
-            ),
-          ),
-          'GK': PlayerPlace(
-            name: LocalizationModel(
-              en: 'GK',
-              ru: 'ВРT',
-              ky: 'ВРT',
-            ),
-          ),
-        },
-      ),
-      SchemeModel(
-        assetPath: 'assets/svg/scheme_8x8/2-4-1.svg',
-        fieldName: '2-4-1',
-        positions: {
-          'ST': PlayerPlace(
-            name: LocalizationModel(
-              en: 'ST',
-              ru: 'ФРВ',
-              ky: 'ФРВ',
-            ),
-          ),
-          'LM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'LM',
-              ru: 'ЛП',
-              ky: 'ЛП',
-            ),
-          ),
-          'CAM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CAM',
-              ru: 'ЦАП',
-              ky: 'ЦАП',
-            ),
-          ),
-          'CAM_2': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CAM',
-              ru: 'ЦАП',
-              ky: 'ЦАП',
-            ),
-          ),
-          'RM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'RM',
-              ru: 'ПП',
-              ky: 'ПП',
-            ),
-          ),
-          'CB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CB',
-              ru: 'ЦЗ',
-              ky: 'ЦЗ',
-            ),
-          ),
-          'CB_2': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CB',
-              ru: 'ЦЗ',
-              ky: 'ЦЗ',
-            ),
-          ),
-          'CB_3': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CB',
-              ru: 'ЦЗ',
-              ky: 'ЦЗ',
-            ),
-          ),
-        },
-      ),
+      // SchemeModel(
+      //   name: null,
+      //   assetPath: 'assets/svg/scheme_8x8/2-3-2.svg',
+      //   fieldName: '2-3-2',
+      //   positions: {
+      //     'ST': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 40,
+      //         left: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 25 / 375,
+      //         left: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'ST',
+      //         ru: 'ФРВ',
+      //         ky: 'ФРВ',
+      //       ),
+      //     ),
+      //     'ST_2': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 40,
+      //         right: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 25 / 375,
+      //         right: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'ST',
+      //         ru: 'ФРВ',
+      //         ky: 'ФРВ',
+      //       ),
+      //     ),
+      //     'LM': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //         left: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //         left: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'LM',
+      //         ru: 'ЛП',
+      //         ky: 'ЛП',
+      //       ),
+      //     ),
+      //     'CM': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CM',
+      //         ru: 'ЦП',
+      //         ky: 'ЦП',
+      //       ),
+      //     ),
+      //     'RM': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //         right: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //         right: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'RM',
+      //         ru: 'ПП',
+      //         ky: 'ПП',
+      //       ),
+      //     ),
+      //     'CB': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 320,
+      //         left: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 210 / 375,
+      //         left: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CB',
+      //         ru: 'ЦЗ',
+      //         ky: 'ЦЗ',
+      //       ),
+      //     ),
+      //     'CB_2': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 320,
+      //         right: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 210 / 375,
+      //         right: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CB',
+      //         ru: 'ЦЗ',
+      //         ky: 'ЦЗ',
+      //       ),
+      //     ),
+      //     'GK': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 410,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 270 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'GK',
+      //         ru: 'ВРT',
+      //         ky: 'ВРT',
+      //       ),
+      //     ),
+      //   },
+      // ),
+
+      // SchemeModel(
+      //   assetPath: 'assets/svg/scheme_8x8/2-4-1.svg',
+      //   fieldName: '2-4-1',
+      //   positions: {
+      //     'ST': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 40,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 25 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'ST',
+      //         ru: 'ФРВ',
+      //         ky: 'ФРВ',
+      //       ),
+      //     ),
+      //     'LM': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //         left: 20,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //         left: maxWidth * 20 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'LM',
+      //         ru: 'ЛП',
+      //         ky: 'ЛП',
+      //       ),
+      //     ),
+      //     'CAM': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //         left: 140,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //         left: maxWidth * 100 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CAM',
+      //         ru: 'ЦАП',
+      //         ky: 'ЦАП',
+      //       ),
+      //     ),
+      //     'CAM_2': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //         right: 140,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //         right: maxWidth * 100 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CAM',
+      //         ru: 'ЦАП',
+      //         ky: 'ЦАП',
+      //       ),
+      //     ),
+      //     'RM': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 180,
+      //         right: 20,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 115 / 375,
+      //         right: maxWidth * 20 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'RM',
+      //         ru: 'ПП',
+      //         ky: 'ПП',
+      //       ),
+      //     ),
+      //     'CB': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 320,
+      //         left: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 210 / 375,
+      //         left: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CB',
+      //         ru: 'ЦЗ',
+      //         ky: 'ЦЗ',
+      //       ),
+      //     ),
+      //     'CB_2': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 320,
+      //         right: 50,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 210 / 375,
+      //         right: maxWidth * 35 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'CB',
+      //         ru: 'ЦЗ',
+      //         ky: 'ЦЗ',
+      //       ),
+      //     ),
+      //     'GK': PlayerPlace(
+      //       tabletSize: const TabletSize(
+      //         top: 410,
+      //       ),
+      //       phoneSize: PhoneSize(
+      //         top: maxWidth * 270 / 375,
+      //       ),
+      //       name: const LocalizationModel(
+      //         en: 'GK',
+      //         ru: 'ВРT',
+      //         ky: 'ВРT',
+      //       ),
+      //     ),
+      //   },
+      // ),
       SchemeModel(
         assetPath: 'assets/svg/scheme_8x8/3-1-2-1.svg',
         fieldName: '3-1-2-1',
         positions: {
           'ST': PlayerPlace(
-            name: LocalizationModel(
+            tabletSize: const TabletSize(
+              top: 40,
+            ),
+            phoneSize: PhoneSize(
+              top: maxWidth * 25 / 375,
+            ),
+            name: const LocalizationModel(
               en: 'ST',
               ru: 'ФРВ',
               ky: 'ФРВ',
             ),
           ),
           'CAM': PlayerPlace(
-            name: LocalizationModel(
+            tabletSize: const TabletSize(
+              top: 140,
+              left: 100,
+            ),
+            phoneSize: PhoneSize(
+              top: maxWidth * 90 / 375,
+              left: maxWidth * 75 / 375,
+            ),
+            name: const LocalizationModel(
               en: 'CAM',
               ru: 'ЦАП',
               ky: 'ЦАП',
             ),
           ),
           'CAM_2': PlayerPlace(
-            name: LocalizationModel(
+            tabletSize: const TabletSize(
+              top: 140,
+              right: 100,
+            ),
+            phoneSize: PhoneSize(
+              top: maxWidth * 90 / 375,
+              right: maxWidth * 75 / 375,
+            ),
+            name: const LocalizationModel(
               en: 'CAM',
               ru: 'ЦАП',
               ky: 'ЦАП',
             ),
           ),
           'CM': PlayerPlace(
-            name: LocalizationModel(
+            tabletSize: const TabletSize(
+              top: 200,
+            ),
+            phoneSize: PhoneSize(
+              top: maxWidth * 145 / 375,
+            ),
+            name: const LocalizationModel(
               en: 'CM',
               ru: 'ЦП',
               ky: 'ЦП',
             ),
           ),
-          'LB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'LB',
-              ru: 'ЛЗ',
-              ky: 'ЛЗ',
-            ),
-          ),
-          'CB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CB',
-              ru: 'ЦЗ',
-              ky: 'ЦЗ',
-            ),
-          ),
-          'RB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'RB',
-              ru: 'ПЗ',
-              ky: 'ПЗ',
-            ),
-          ),
-          'GK': PlayerPlace(
-            name: LocalizationModel(
-              en: 'GK',
-              ru: 'ВРT',
-              ky: 'ВРT',
-            ),
-          ),
-        },
-      ),
-      SchemeModel(
-        assetPath: 'assets/svg/scheme_8x8/3-3-1.svg',
-        fieldName: '3-3-1',
-        positions: {
-          'ST': PlayerPlace(
-            name: LocalizationModel(
-              en: 'ST',
-              ru: 'ФРВ',
-              ky: 'ФРВ',
-            ),
-          ),
           'LM': PlayerPlace(
-            name: LocalizationModel(
+            tabletSize: const TabletSize(
+              top: 260,
+              left: 50,
+            ),
+            phoneSize: PhoneSize(
+              top: maxWidth * 190 / 375,
+              left: maxWidth * 35 / 375,
+            ),
+            name: const LocalizationModel(
               en: 'LM',
               ru: 'ЛП',
               ky: 'ЛП',
             ),
           ),
-          'CM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CM',
-              ru: 'ЦП',
-              ky: 'ЦП',
-            ),
-          ),
-          'RM': PlayerPlace(
-            name: LocalizationModel(
-              en: 'RM',
-              ru: 'ПП',
-              ky: 'ПП',
-            ),
-          ),
-          'LB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'LB',
-              ru: 'ЛЗ',
-              ky: 'ЛЗ',
-            ),
-          ),
-          'CB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'CB',
-              ru: 'ЦЗ',
-              ky: 'ЦЗ',
-            ),
-          ),
-          'RB': PlayerPlace(
-            name: LocalizationModel(
-              en: 'RB',
-              ru: 'ПЗ',
-              ky: 'ПЗ',
-            ),
-          ),
-          'GK': PlayerPlace(
-            name: LocalizationModel(
-              en: 'GK',
-              ru: 'ВРT',
-              ky: 'ВРT',
-            ),
-          ),
+
+          // 'GK': const PlayerPlace(
+          //   name: LocalizationModel(
+          //     en: 'GK',
+          //     ru: 'ВРT',
+          //     ky: 'ВРT',
+          //   ),
+          // ),
         },
       ),
-      SchemeModel(
+      // SchemeModel(
+      //   assetPath: 'assets/svg/scheme_8x8/3-3-1.svg',
+      //   fieldName: '3-3-1',
+      //   positions: {
+      //     'ST': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'ST',
+      //         ru: 'ФРВ',
+      //         ky: 'ФРВ',
+      //       ),
+      //     ),
+      //     'LM': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'LM',
+      //         ru: 'ЛП',
+      //         ky: 'ЛП',
+      //       ),
+      //     ),
+      //     'CM': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'CM',
+      //         ru: 'ЦП',
+      //         ky: 'ЦП',
+      //       ),
+      //     ),
+      //     'RM': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'RM',
+      //         ru: 'ПП',
+      //         ky: 'ПП',
+      //       ),
+      //     ),
+      //     'LB': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'LB',
+      //         ru: 'ЛЗ',
+      //         ky: 'ЛЗ',
+      //       ),
+      //     ),
+      //     'CB': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'CB',
+      //         ru: 'ЦЗ',
+      //         ky: 'ЦЗ',
+      //       ),
+      //     ),
+      //     'RB': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'RB',
+      //         ru: 'ПЗ',
+      //         ky: 'ПЗ',
+      //       ),
+      //     ),
+      //     'GK': PlayerPlace(
+      //       name: LocalizationModel(
+      //         en: 'GK',
+      //         ru: 'ВРT',
+      //         ky: 'ВРT',
+      //       ),
+      //     ),
+      //   },
+      // ),
+      const SchemeModel(
         assetPath: 'assets/svg/scheme_8x8/3-4-0.svg',
         fieldName: '3-4-0',
         positions: {
@@ -4447,7 +4592,7 @@ SchemeType schemesIluustration(
       ),
     ],
     sevenBySeven: [
-      SchemeModel(
+      const SchemeModel(
         assetPath: 'assets/svg/scheme_7x7/2-3-1.svg',
         fieldName: '2-3-1',
         positions: {
@@ -4502,7 +4647,7 @@ SchemeType schemesIluustration(
           ),
         },
       ),
-      SchemeModel(
+      const SchemeModel(
         assetPath: 'assets/svg/scheme_7x7/3-2-1.svg',
         fieldName: '3-2-1',
         positions: {
@@ -4559,7 +4704,7 @@ SchemeType schemesIluustration(
       ),
     ],
     sixBySix: [
-      SchemeModel(
+      const SchemeModel(
           name: null,
           assetPath: 'assets/svg/scheme_6x6/1-3-1.svg',
           fieldName: '1-3-1',
@@ -4607,7 +4752,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           name: null,
           assetPath: 'assets/svg/scheme_6x6/2-1-2.svg',
           fieldName: '2-1-2',
@@ -4655,7 +4800,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           name: null,
           assetPath: 'assets/svg/scheme_6x6/2-2-1.svg',
           fieldName: '2-2-1',
@@ -4703,7 +4848,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           name: null,
           assetPath: 'assets/svg/scheme_6x6/3-1-1.svg',
           fieldName: '3-1-1',
@@ -4751,7 +4896,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           name: null,
           assetPath: 'assets/svg/scheme_6x6/3-2.svg',
           fieldName: '3-2',
@@ -4801,7 +4946,7 @@ SchemeType schemesIluustration(
           }),
     ],
     fiveByFive: [
-      SchemeModel(
+      const SchemeModel(
           assetPath: 'assets/svg/scheme_5x5/1-1-2.svg',
           fieldName: '1-1-2',
           positions: {
@@ -4841,7 +4986,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           assetPath: 'assets/svg/scheme_5x5/1-2-1.svg',
           fieldName: '1-2-1',
           positions: {
@@ -4881,7 +5026,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           assetPath: 'assets/svg/scheme_5x5/2-0-2.svg',
           fieldName: '2-0-2',
           positions: {
@@ -4921,7 +5066,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
         assetPath: 'assets/svg/scheme_5x5/2-1-1.svg',
         fieldName: '2-1-1',
         positions: {
@@ -4964,7 +5109,7 @@ SchemeType schemesIluustration(
       ),
     ],
     fourByFour: [
-      SchemeModel(
+      const SchemeModel(
           assetPath: 'assets/svg/scheme_4x4/1-1-2.svg',
           fieldName: '1-1-2',
           positions: {
@@ -4997,7 +5142,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           assetPath: 'assets/svg/scheme_4x4/1-2-1.svg',
           fieldName: '1-2-1',
           positions: {
@@ -5030,7 +5175,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
           assetPath: 'assets/svg/scheme_4x4/2-0-2.svg',
           fieldName: '2-0-2',
           positions: {
@@ -5063,7 +5208,7 @@ SchemeType schemesIluustration(
               ),
             ),
           }),
-      SchemeModel(
+      const SchemeModel(
         assetPath: 'assets/svg/scheme_4x4/2-1-1.svg',
         fieldName: '2-1-1',
         positions: {
