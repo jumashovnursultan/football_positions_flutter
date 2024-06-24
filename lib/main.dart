@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Flutter Demo',
       home: TeamBuildingView(
-          fieldSize: 'eight_by_eight',
+          fieldSize: 'four_by_four',
           teams: TeamsModel(
             id: 1,
             firstTeamColor: '#1456CE',
